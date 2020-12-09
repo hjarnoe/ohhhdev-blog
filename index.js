@@ -29,7 +29,7 @@ config({ cache: process.env.NODE_ENV === 'production' });
 // ===========                ===========
 
 // =========== Connect to MongoDB ===========
-mongoose.connect(mongodb, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/blog-project-one', { useNewUrlParser: true, useUnifiedTopology: true })
 	.then(() => 'You are now connected to Mongo!')
 	.catch(err => console.log('Something went wrong', err));
 
