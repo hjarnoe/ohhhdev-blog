@@ -1,0 +1,34 @@
+// Colors
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$green: rgb(0, 128, 0);
+$hover-link: $green;
+$green-opaque: rgba(0, 128, 0, .2);
+$green-opaque-05: rgba(0, 128, 0, .5);
+$lime-green: rgb(0, 255, 0);
+$black-06: rgba(0, 0, 0, .6);
+$black-07: rgba(0, 0, 0, .7);
+$black-08: rgba(0, 0, 0, .8);
+$contact-gray: rgb(121, 128, 121);
+$close-btn: rgba(139, 0, 0, .3);
+$temp-white: rgba(255, 255, 255, .6);
+
+// Borders
+$border-white: 2px solid $white;
+$border-radius: 2rem;
+$border-green: 2px solid $green;
+$table-border: 1px solid $black;
+$contact-border: 2px outset $green;
+$input-border: 1px solid rgb(121, 128, 121);
+$input-focus-border: 2px solid rgb(0, 100, 0);
+$button-border: 2px solid $green;
+$modal-content: 4px groove $white;
+$modal-img: .5em ridge $green;
+
+// Text shadows
+$h1-shadow: $black 5px 5px 15px;
+
+// Hover colors
+$input-hover: rgb(201, 208, 201);
+$button-hover: rgb(127, 255, 0);
+$close-btn-hover: rgba(139, 0, 0, .5);

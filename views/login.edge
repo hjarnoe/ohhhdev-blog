@@ -1,0 +1,37 @@
+@layout('app')
+
+@section('content')
+<!-- Page Header -->
+<header class="header">
+	
+	<div class="overlay">
+		<div class="container">
+			<div class="site-heading">
+				<h1>Login</h1>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+<main class="main">
+	
+	<section class="section form-section">
+		<form action="/users/login" method="POST" encType="multipart/form-data">
+			<div class="form-field">
+				<label>Email</label>
+				<input type="email" name="email" placeholder="Email" class="form-control">
+			</div>
+			<div class="form-field">
+				<label>Password</label>
+				<input type="password" name="password" placeholder="Password" class="form-control">
+			</div>
+			
+			<div class="form-field">
+				<button class="createBtn">Login</button>
+			</div>
+		</form>
+	</section>
+	
+</main>
+@endsection

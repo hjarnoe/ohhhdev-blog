@@ -1,0 +1,105 @@
+// Reset styles
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+em,
+img,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+ul,
+li,
+form,
+label,
+article,
+aside,
+canvas,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // overflow-x: hidden;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+article,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav {
+  ul {
+	list-style: none;
+  }
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}

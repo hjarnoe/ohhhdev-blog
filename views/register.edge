@@ -1,0 +1,52 @@
+@layout('app')
+
+@section('content')
+<!-- Page Header -->
+<header class="header">
+	<div class="overlay">
+		<div class="container">
+			<div class="site-heading">
+				<h1>Create A New Account</h1>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+<main class="main">
+	
+	<section class="section">
+		@if(errors.length > 0)
+		<ul class="list-group">
+			@each(error in errors)
+			<li class="list-group-item">{{ error }}</li>
+			@endeach
+		</ul>
+		@endif
+	</section>
+	
+	<section class="section form-section">
+		
+		<form action="/users/register" method="POST" encType="multipart/form-data">
+			
+			<div class="form-field">
+					<label>Username</label>
+					<input type="text" name="username" placeholder="Username" class="form-control">
+				</div>
+			<div class="form-field">
+				<label>Email</label>
+				<input type="email" name="email" placeholder="Email" class="form-control">
+			</div>
+			<div class="form-field">
+				<label>Password</label>
+				<input type="password" name="password" placeholder="Password" class="form-control">
+			</div>
+			
+			<div class="form-field">
+				<button class="createBtn">Register now</button>
+			</div>
+		</form>
+		
+	</section>
+</main>
+@endsection

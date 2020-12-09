@@ -1,0 +1,45 @@
+@layout('app')
+
+@section('content')
+<header class="header">
+	<div class="overlay">
+		<div class="container">
+			<div class="site-heading">
+				<h1>Create New Post</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Main Content -->
+<main class="main">
+	
+	<section class="section form-section">
+		<form action="/posts/store" method="POST" encType="multipart/form-data">
+			<div class="form-field">
+				<label>Username</label>
+				<input type="text" name="username" placeholder="Username" class="form-control">
+			</div>
+			<div class="form-field">
+				<label>Title</label>
+				<input type="text" name="title" placeholder="Title" class="form-control">
+			</div>
+			<div class="form-field">
+				<label>Description</label>
+				<input type="text" name="description" placeholder="Description" class="form-control">
+			</div>
+			<div class="form-field">
+				<label>Content</label>
+				<textarea name="content" placeholder="Content ..." cols="30" rows="10" class="form-control"></textarea>
+			</div>
+			<div class="form-field">
+				<input type="file" name="image" class="form-control-file">
+			</div>
+			<div class="form-field">
+				<button class="btn btn-primary">Create Post</button>
+			</div>
+		</form>
+	</section>
+	
+</main>
+@endsection

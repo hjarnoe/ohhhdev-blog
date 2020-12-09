@@ -1,0 +1,40 @@
+.form-section {
+  padding: 0 10rem;
+
+  form {
+	width: 100%;
+	padding: 0 14rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	.form-field {
+	  width: 100%;
+	  display: flex;
+	  justify-content: space-around;
+	  align-items: center;
+
+	  label {
+		display: none;
+	  }
+
+	  input, textarea {
+		width: 100%;
+		padding: 1rem;
+		margin: .5rem;
+		border: 3px ridge darkgreen;
+		border-radius: 10px;
+	  }
+
+	  .createBtn {
+		width: 100%;
+		padding: 1rem;
+		margin: .5rem;
+		font-size: 1.5rem;
+		border: 2px solid black;
+		border-radius: 10px;
+	  }
+	}
+  }
+}

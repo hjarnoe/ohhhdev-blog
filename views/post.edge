@@ -1,0 +1,32 @@
+@layout('app')
+
+@section('content')
+<!-- Page Header -->
+<header class="header" style="background-image: url('{{ post.image }}')">
+	<div class="overlay">
+		<div class="container">
+			<div class="post-heading">
+				<h1>{{ post.title }}</h1>
+				<span class="meta">Posted by
+						<a href="#">{{ post.username }}</a>
+						on {{ post.createdAt.toDateString() }}
+						</span>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Post Content -->
+<main class="main">
+	
+	<section class="section">
+		<article class="article">
+			<div class="post-content">
+				{{ post.content }}
+			</div>
+		</article>
+	</section>
+</main>
+
+<hr>
+@endsection

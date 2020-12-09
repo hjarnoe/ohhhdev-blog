@@ -1,0 +1,228 @@
+// @-rules
+@keyframes rotate-out {
+  0% {
+	transform: rotate(0deg);
+  }
+
+  40% {
+	transform: rotate(180deg);
+  }
+
+  100% {
+	transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-in {
+  0% {
+	transform: rotate(360deg);
+  }
+
+  40% {
+	transform: rotate(180deg);
+  }
+
+  100% {
+	transform: rotate(0deg);
+  }
+}
+
+@keyframes dash-in {
+  0% {
+	stroke-dashoffset: 240;
+  }
+
+  40% {
+	stroke-dashoffset: 240;
+  }
+
+  100% {
+	stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-out {
+  0% {
+	stroke-dashoffset: 0;
+  }
+
+  40% {
+	stroke-dashoffset: 240;
+  }
+
+  100% {
+	stroke-dashoffset: 240;
+  }
+}
+
+@keyframes bun-top-out {
+  0% {
+	left: 0;
+	top: 0;
+	transform: rotate(0deg);
+  }
+
+  20% {
+	left: 0;
+	top: 0;
+	transform: rotate(15deg);
+  }
+
+  80% {
+	left: -5px;
+	top: 0;
+	transform: rotate(-60deg);
+  }
+
+  100% {
+	left: -5px;
+	top: 1px;
+	transform: rotate(-45deg);
+  }
+}
+
+@keyframes bun-bot-out {
+  0% {
+	left: 0;
+	transform: rotate(0deg);
+  }
+
+  20% {
+	left: 0;
+	transform: rotate(-15deg);
+  }
+
+  80% {
+	left: -5px;
+	transform: rotate(60deg);
+  }
+
+  100% {
+	left: -5px;
+	transform: rotate(45deg);
+  }
+}
+
+@keyframes bun-top-in {
+  0% {
+	bottom: 0;
+	left: -5px;
+	transform: rotate(-45deg);
+  }
+
+  20% {
+	bottom: 0;
+	left: -5px;
+	transform: rotate(-60deg);
+  }
+
+  80% {
+	bottom: 0;
+	left: 0;
+	transform: rotate(15deg);
+  }
+
+  100% {
+	bottom: 1px;
+	left: 0;
+	transform: rotate(0deg);
+  }
+}
+
+@keyframes bun-bot-in {
+  0% {
+	left: -5px;
+	transform: rotate(45deg);
+  }
+
+  20% {
+	bottom: 0;
+	left: -5px;
+	transform: rotate(60deg);
+  }
+
+  80% {
+	bottom: 0;
+	left: 0;
+	transform: rotate(-15deg);
+  }
+
+  100% {
+	left: 0;
+	transform: rotate(0deg);
+  }
+}
+
+@keyframes burger-fill-in {
+  0% {
+	left: 36px;
+	width: 0;
+  }
+
+  40% {
+	left: 40px;
+	width: 0;
+  }
+
+  80% {
+	left: -6px;
+	width: 36px;
+  }
+
+  100% {
+	left: 0;
+	width: 36px;
+  }
+}
+
+@keyframes burger-fill-out {
+  0% {
+	left: 0;
+	width: 36px;
+  }
+
+  20% {
+	left: -6px;
+	width: 42px;
+  }
+
+  40% {
+	left: 40px;
+	width: 0;
+  }
+
+  100% {
+	left: 36px;
+	width: 0;
+  }
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+	opacity: 0;
+  }
+
+  100% {
+	opacity: 1;
+  }
+}
+
+// Animations
+// On scroll animation
+.come-in {
+  animation: come-in 1s ease forwards;
+  transform: translateY(150px);
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.9s;
+}
+
+.already-visible {
+  animation: none;
+  transform: translateY(0);
+}
